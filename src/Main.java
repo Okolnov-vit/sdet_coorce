@@ -15,3 +15,5 @@ public class Main {
         System.out.println("Fuel consumption for 200 km: " + truck.calculateFuelEfficiency(200) + " liters");
     }
 }
+
+//add test
