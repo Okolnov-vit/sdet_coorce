@@ -1,20 +1,18 @@
-import Classes.InputControl;
-
+import Classes.Car;
+import Classes.Truck;
 
 public class Main {
     public static void main(String[] args) {
+        Car car = new Car("Toyota", "Corolla", 4, 6.5);
+        Truck truck = new Truck("Volvo", "FH", 18, 12.0);
 
-        System.out.println(InputControl.validateInput("user_name123", "pass_1234", "pass_1234")); // true
+        car.displayInfo();
+        car.drive();
+        System.out.println("Fuel consumption for 200 km: " + car.calculateFuelEfficiency(200) + " liters");
 
-        // Тестирование с невалидным логином
-        System.out.println(InputControl.validateInput("user@name", "pass_1234", "pass_1234")); // false
-
-        // Тестирование с невалидным паролем
-        System.out.println(InputControl.validateInput("username", "pass#1234", "pass#1234")); // false
-
-        // Тестирование с несовпадающими паролями
-        System.out.println(InputControl.validateInput("username", "pass_1234", "pass_12345")); // false
+        truck.displayInfo();
+        truck.drive();
+        System.out.println("Fuel consumption for 200 km: " + truck.calculateFuelEfficiency(200) + " liters");
     }
 }
-
 
