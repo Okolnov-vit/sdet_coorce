@@ -19,3 +19,4 @@ public abstract class Vehicle {
         return model;
     }
 }
+// Lesson_1-2

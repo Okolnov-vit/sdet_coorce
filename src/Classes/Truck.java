@@ -33,3 +33,4 @@ public class Truck extends Vehicle implements Drivable, FuelEfficiency {
         return payloadCapacity;
     }
 }
+// Lesson_1-2
